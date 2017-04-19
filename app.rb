@@ -10,4 +10,5 @@ end
 
 get('/form') do
   @word = params.fetch('words').palindrome?()
+  erb(:index)
 end
